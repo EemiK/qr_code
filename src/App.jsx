@@ -9,6 +9,7 @@ export default function App() {
   const [text, setText] = useState("");
 
   const downloadQRCode = () => {
+    console.log("Download QR Code");
     const canvas = document.querySelector("canvas");
     const url = canvas.toDataURL("image/png");
     const a = document.createElement("a");
